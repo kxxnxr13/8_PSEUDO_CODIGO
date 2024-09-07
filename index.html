@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Pseudo-Clases Estructurales, Elementos y Estados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Ejemplos de Pseudo-Clases Estructurales, Elementos y Estados</h1>
+
+    <!-- Pseudo-Clases Estructurales -->
+    <h2>Pseudo-Clases Estructurales - Tablas y Listas</h2>
+    <div class="contenedor">
+        <!-- nth-child(odd) con una tabla -->
+        <div class="item nth-child-odd">
+            <h3>:nth-child(odd) en una tabla</h3>
+            <table>
+                <tr><td>Fila 1</td></tr>
+                <tr><td>Fila 2</td></tr>
+                <tr><td>Fila 3</td></tr>
+                <tr><td>Fila 4</td></tr>
+                <tr><td>Fila 5</td></tr>
+            </table>
+            <p>Selecciona las filas impares de la tabla.</p>
+        </div>
+
+        <!-- nth-child(even) en una lista -->
+        <div class="item nth-child-even">
+            <h3>:nth-child(even) en una lista</h3>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+            <p>Selecciona los elementos pares de la lista.</p>
+        </div>
+
+        <!-- nth-child(n) con párrafos -->
+        <div class="item nth-child-n">
+            <h3>:nth-child(3) en párrafos</h3>
+            <div class="texto">
+                <p>Párrafo 1</p>
+                <p>Párrafo 2</p>
+                <p>Párrafo 3</p>
+            </div>
+            <p>Selecciona el tercer párrafo en el contenedor.</p>
+        </div>
+
+        <!-- nth-of-type(n) en una lista -->
+        <div class="item nth-of-type">
+            <h3>:nth-of-type(2) en una lista</h3>
+            <ol>
+                <li>Primer elemento</li>
+                <li>Segundo elemento</li>
+                <li>Tercer elemento</li>
+            </ol>
+            <p>Selecciona el segundo elemento de la lista ordenada.</p>
+        </div>
+
+        <!-- nth-last-child(n) en un contenedor de divs -->
+        <div class="item nth-last-child">
+            <h3>:nth-last-child(2) en un contenedor de divs</h3>
+            <div class="contenedor-divs">
+                <div>Div 1</div>
+                <div>Div 2</div>
+                <div>Div 3</div>
+            </div>
+            <p>Selecciona el segundo último div en el contenedor.</p>
+        </div>
+
+        <!-- nth-last-of-type(n) en un contenedor de divs -->
+        <div class="item nth-last-of-type">
+            <h3>:nth-last-of-type(2) en un contenedor de divs</h3>
+            <div class="contenedor-divs">
+                <div>Div A</div>
+                <div>Div B</div>
+                <div>Div C</div>
+            </div>
+            <p>Selecciona el segundo último div del mismo tipo.</p>
+        </div>
+    </div>
+
+    <!-- Pseudo-Elementos -->
+    <h2>Ejemplos de Pseudo-Elementos</h2>
+    <div class="contenedor">
+        <div class="recuadro">
+            <p class="before-example">Ejemplo de pseudo-elemento ::before.</p>
+        </div>
+        <div class="recuadro">
+            <p class="after-example">Ejemplo de pseudo-elemento ::after.</p>
+        </div>
+        <div class="recuadro">
+            <p class="first-line-example">Esta es una demostración del pseudo-elemento ::first-line.</p>
+        </div>
+        <div class="recuadro">
+            <p class="first-letter-example">Mira cómo cambia solo la primera letra con el pseudo-elemento ::first-letter.</p>
+        </div>
+        <div class="recuadro">
+            <p class="selection-example">Selecciona cualquier parte de este texto para ver el pseudo-elemento ::selection.</p>
+        </div>
+        <div class="recuadro">
+            <input type="text" placeholder="Pseudo-elemento ::placeholder">
+        </div>
+    </div>
+
+    <!-- Pseudo-Clases de Estado -->
+    <h2>Ejemplos de Pseudo-Clases de Estado</h2>
+    <div class="contenedor">
+        <div class="item">
+            <h3>:hover</h3>
+            <button class="hover-boton">Pasa el ratón</button>
+        </div>
+        <div class="item">
+            <h3>:active</h3>
+            <button class="active-boton">Haz clic</button>
+        </div>
+        <div class="item">
+            <h3>:focus</h3>
+            <input type="text" class="focus-campo" placeholder="Haz clic aquí">
+        </div>
+        <div class="item">
+            <h3>:visited</h3>
+            <a href="#" class="enlace-visitado">Enlace visitado</a>
+        </div>
+        <div class="item">
+            <h3>:checked</h3>
+            <input type="checkbox" id="opcion1" checked>
+            <label for="opcion1">Checkbox seleccionado</label>
+        </div>
+        <div class="item">
+            <h3>:disabled</h3>
+            <button class="boton-deshabilitado" disabled>Deshabilitado</button>
+        </div>
+        <div class="item">
+            <h3>:enabled</h3>
+            <button class="boton-habilitado">Habilitado</button>
+        </div>
+        <div class="item">
+            <h3>:invalid</h3>
+            <input type="email" class="campo-invalido" value="correo@inválido">
+        </div>
+        <div class="item">
+            <h3>:default</h3>
+            <input type="radio" name="radio-grupo" checked>
+            <label>Radio predeterminado</label>
+        </div>
+        <div class="item">
+            <h3>:empty</h3>
+            <div class="vacio"></div>
+        </div>
+    </div>
+</body>
+</html>
